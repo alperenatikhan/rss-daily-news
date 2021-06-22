@@ -1,0 +1,44 @@
+html[data-theme='dark'] {
+  background: #FAFAFA;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html[data-theme='dark'] img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+h1,
+p {
+  font-family: Lato;
+}
+
+.button-container{
+  background-color: azure;
+}
+
+button{
+  border-color: aliceblue;
+}
+
+button#summary {
+  margin: 1rem 0 0.2rem;
+   background-color: dodgerblue;
+
+}
+
+button:hover {
+  background-color: dodgerblue;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
