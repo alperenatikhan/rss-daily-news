@@ -90,8 +90,10 @@ export default function ClassifyArticles(props) {
         width: '20rem'
       }}
     >
-      <h4 style={{ fontSize: '1rem' }}> {category} </h4>
-      <h2 style={{ fontSize: '1.2rem' }}> {title} </h2>
+      <div style={{ height: '8rem', textOverflow: 'clip' }}>
+        <h4 style={{ fontSize: '1rem' }}> {category} </h4>
+        <h2 style={{ fontSize: '1.2rem', fontWeight: '600' }}> {title} </h2>
+      </div>
       <img
         src={`https://source.unsplash.com/300x300/?${
           props.newsTopic
@@ -109,8 +111,8 @@ export default function ClassifyArticles(props) {
           style={{
             width: '18rem',
             padding: '1rem',
-
-            justifyText: 'justified'
+            textAlign: 'justified',
+            justifyText: 'inter-word'
           }}
           dangerouslySetInnerHTML={{ __html: content }}
         />
