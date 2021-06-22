@@ -86,7 +86,7 @@ export default function ClassifyArticles(props) {
         alignItems: 'center',
         alignText: 'left',
         marginTop: '1rem',
-        padding: '5%',
+        padding: '1rem 5%',
         width: '20rem'
       }}
     >
