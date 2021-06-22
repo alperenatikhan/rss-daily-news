@@ -111,8 +111,8 @@ export default function ClassifyArticles(props) {
           style={{
             width: '18rem',
             padding: '1rem',
-            textAlign: 'justified',
-            justifyText: 'inter-word'
+            textAlign: 'justify',
+            textJustify: 'inter-word'
           }}
           dangerouslySetInnerHTML={{ __html: content }}
         />
