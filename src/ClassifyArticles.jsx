@@ -85,14 +85,14 @@ export default function ClassifyArticles(props) {
         justifyContent: 'flex-start',
         alignItems: 'center',
         alignText: 'left',
-        margin: '0.5rem',
+        margin: '0.2rem 0.5rem',
         padding: '1.5rem 2rem',
         width: '20rem'
       }}
     >
       <div style={{ height: '9rem', textOverflow: 'clip' }}>
-        <h4 style={{ fontSize: '1rem' }}> {category} </h4>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: '600' }}> {title} </h2>
+        <h4 style={{ fontSize: '1rem'}}> {category} </h4>
+        <h2 style={{ fontSize: '1.1rem', fontWeight: '600',lineHeight:"1.5rem"}}> {title} </h2>
       </div>
       <img
         src={`https://source.unsplash.com/300x300/?${
@@ -112,7 +112,8 @@ export default function ClassifyArticles(props) {
             width: '18rem',
             padding: '1rem',
             textAlign: 'justify',
-            textJustify: 'inter-word'
+            textJustify: 'inter-word',
+            lineHeight:"1.4rem"
           }}
           dangerouslySetInnerHTML={{ __html: content }}
         />

@@ -1,5 +1,5 @@
 html[data-theme='dark'] {
-  background: #FAFAFA;
+  background: #fafafa;
   filter: invert(1) hue-rotate(180deg);
 }
 
@@ -7,7 +7,7 @@ html[data-theme='dark'] img {
   filter: invert(1) hue-rotate(180deg);
 }
 
-body{
+body {
   background-color: whitesmoke;
 }
 
@@ -16,18 +16,21 @@ p {
   font-family: Lato;
 }
 
-.button-container{
-  background-color: azure;
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
-button{
-  border-color: aliceblue;
+button {
+  border: solid 2px aliceblue;
+  background-color: #fafafa;
 }
 
 button#summary {
   margin: 1rem 0 0.2rem;
-   background-color: dodgerblue;
-
+  background-color: dodgerblue;
 }
 
 button:hover {
