@@ -85,14 +85,14 @@ export default function ClassifyArticles(props) {
         justifyContent: 'flex-start',
         alignItems: 'center',
         alignText: 'left',
-        margin: '1rem',
-        padding: '1.2rem 2rem',
+        margin: '0.5rem',
+        padding: '1.5rem 2rem',
         width: '20rem'
       }}
     >
-      <div style={{ height: '8rem', textOverflow: 'clip' }}>
+      <div style={{ height: '9rem', textOverflow: 'clip' }}>
         <h4 style={{ fontSize: '1rem' }}> {category} </h4>
-        <h2 style={{ fontSize: '1.2rem', fontWeight: '600' }}> {title} </h2>
+        <h2 style={{ fontSize: '1.1rem', fontWeight: '600' }}> {title} </h2>
       </div>
       <img
         src={`https://source.unsplash.com/300x300/?${
