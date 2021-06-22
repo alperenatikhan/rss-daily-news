@@ -119,10 +119,12 @@ export default function App() {
           Greece{' '}
         </button>
 </div>
-        <h2 style={{ margin: '2%' }}>
+<div style={{ margin: '2%', padding:"0 15%",textAlign:"center" }}>
+        <h2 style={{fontSize:"1.5rem"}} >
           {' '}
-          Daily News from {handleTopic(newsTopic)}{' '}
+          Daily News from <span style={{fontWeight:"600"}}> {handleTopic(newsTopic)} </span>
         </h2>
+        </div>
         <div
           className="row"
           style={{
