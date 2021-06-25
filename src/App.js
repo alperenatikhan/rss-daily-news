@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import xml2js from 'xml2js';
 import axios from 'axios';
-import ClassifyArticles from './ClassifyArticles.jsx';
+import ClassifyArticles from './ClassifyArticles.js';
 
 export default function App() {
   let [newsTopic, setNewsTopic] = useState('world');
@@ -35,95 +35,30 @@ export default function App() {
           Change Theme{' '}
         </button>
 
-<div className="button-container container-fluid">
-        <button
-          
-          onClick={() => setNewsTopic('world')}
-        >
-          {' '}
-          World{' '}
-        </button>
-        <button
-          
-          onClick={() => setNewsTopic('americas')}
-        >
-          {' '}
-          Americas{' '}
-        </button>
-        <button onClick={() => setNewsTopic('eu')}>
-          {' '}
-          Europe{' '}
-        </button>
-        <button
-         
-          onClick={() => setNewsTopic('germany')}
-        >
-          {' '}
-          Germany{' '}
-        </button>
-        <button
-         
-          onClick={() => setNewsTopic('france')}
-        >
-          {' '}
-          France{' '}
-        </button>
-        <button
-         
-          onClick={() => setNewsTopic('spain')}
-        >
-          {' '}
-          Spain{' '}
-        </button>
-        <button
-      
-          onClick={() => setNewsTopic('poland')}
-        >
-          {' '}
-          Poland{' '}
-        </button>
+        <div className="button-container container-fluid">
+          <button onClick={() => setNewsTopic('world')}> World </button>
+          <button onClick={() => setNewsTopic('americas')}> Americas </button>
+          <button onClick={() => setNewsTopic('eu')}> Europe </button>
+          <button onClick={() => setNewsTopic('germany')}> Germany </button>
+          <button onClick={() => setNewsTopic('france')}> France </button>
+          <button onClick={() => setNewsTopic('spain')}> Spain </button>
+          <button onClick={() => setNewsTopic('poland')}> Poland </button>
 
-        <button
-         
-          onClick={() => setNewsTopic('slovakia')}
-        >
-          {' '}
-          Slovakia{' '}
-        </button>
-        <button
-          
-          onClick={() => setNewsTopic('hungary')}
-        >
-          {' '}
-          Hungary{' '}
-        </button>
-        <button
-          
-          onClick={() => setNewsTopic('romania')}
-        >
-          {' '}
-          Romania{' '}
-        </button>
-        <button
-          
-          onClick={() => setNewsTopic('bulgaria')}
-        >
-          {' '}
-          Bulgaria{' '}
-        </button>
-        <button
-         
-          onClick={() => setNewsTopic('greece')}
-        >
-          {' '}
-          Greece{' '}
-        </button>
-</div>
-<div style={{ margin: '2%', padding:"0 15%",textAlign:"center" }}>
-        <h2 style={{fontSize:"1.5rem"}} >
-          {' '}
-          Daily News from <span style={{fontWeight:"600"}}> {handleTopic(newsTopic)} </span>
-        </h2>
+          <button onClick={() => setNewsTopic('slovakia')}> Slovakia </button>
+          <button onClick={() => setNewsTopic('hungary')}> Hungary </button>
+          <button onClick={() => setNewsTopic('romania')}> Romania </button>
+          <button onClick={() => setNewsTopic('bulgaria')}> Bulgaria </button>
+          <button onClick={() => setNewsTopic('greece')}> Greece </button>
+        </div>
+        <div style={{ margin: '2%', padding: '0 15%', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '1.5rem' }}>
+            {' '}
+            Daily News from{' '}
+            <span style={{ fontWeight: '600' }}>
+              {' '}
+              {handleTopic(newsTopic)}{' '}
+            </span>
+          </h2>
         </div>
         <div
           className="row"

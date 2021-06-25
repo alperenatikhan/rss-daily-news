@@ -70,14 +70,6 @@ export default function ClassifyArticles(props) {
     );
   }, [props.newsTopic]);
 
-  const fadeIn = `
-    @keyframes fadeIn {
-      0%   { opacity: 0; }
-      50%  { opacity: 0; }
-      100% { opacity: 1; }
-    }
-  `;
-
   return (
     <div
       className="card .col-sm-8 .col-md-4 .col-lg-3 .col-xl-2"
@@ -93,10 +85,9 @@ export default function ClassifyArticles(props) {
       }}
     >
       <div style={{ height: '9rem', textOverflow: 'clip' }}>
-      <Typing><h4 style={{ fontSize: '1rem' }}>
-          {' '}
-          {category} 
-        </h4></Typing>
+        <FadeIn>
+          <h4 style={{ fontSize: '1rem' }}> {category}</h4>
+        </FadeIn>
         <h2
           style={{
             fontSize: '1.1rem',
@@ -105,10 +96,10 @@ export default function ClassifyArticles(props) {
           }}
         >
           {' '}
-          <Typing> {title} </Typing>{' '}
+          <FadeIn transition="5000"> {title} </FadeIn>{' '}
         </h2>
       </div>
-      <FadeIn>
+      <FadeIn transition="1000">
         <img
           src={`https://source.unsplash.com/300x300/?${
             props.newsTopic
