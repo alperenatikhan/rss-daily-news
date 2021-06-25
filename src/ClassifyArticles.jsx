@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import Typing from 'react-typing-animation';
+import FadeIn from 'react-fade-in';
 
 export default function ClassifyArticles(props) {
   let [titles, setTitles] = useState([]);
@@ -91,15 +93,29 @@ export default function ClassifyArticles(props) {
       }}
     >
       <div style={{ height: '9rem', textOverflow: 'clip' }}>
-        <h4 style={{ fontSize: '1rem'}}> {category} </h4>
-        <h2 style={{ fontSize: '1.1rem', fontWeight: '600',lineHeight:"1.5rem"}}> {title} </h2>
+      <Typing><h4 style={{ fontSize: '1rem' }}>
+          {' '}
+          {category} 
+        </h4></Typing>
+        <h2
+          style={{
+            fontSize: '1.1rem',
+            fontWeight: '600',
+            lineHeight: '1.5rem'
+          }}
+        >
+          {' '}
+          <Typing> {title} </Typing>{' '}
+        </h2>
       </div>
-      <img
-        src={`https://source.unsplash.com/300x300/?${
-          props.newsTopic
-        },${category}/${props.index}`}
-        style={{ width: '15rem', height: '10rem' }}
-      />
+      <FadeIn>
+        <img
+          src={`https://source.unsplash.com/300x300/?${
+            props.newsTopic
+          },${category}/${props.index}`}
+          style={{ width: '15rem', height: '10rem' }}
+        />{' '}
+      </FadeIn>
 
       <button id="summary" onClick={() => setShowSummary(!showSummary)}>
         {' '}
@@ -113,7 +129,7 @@ export default function ClassifyArticles(props) {
             padding: '1rem',
             textAlign: 'justify',
             textJustify: 'inter-word',
-            lineHeight:"1.4rem"
+            lineHeight: '1.4rem'
           }}
           dangerouslySetInnerHTML={{ __html: content }}
         />
