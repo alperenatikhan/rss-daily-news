@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './style.css';
-import xml2js from 'xml2js';
-import axios from 'axios';
 import ClassifyArticles from './ClassifyArticles.js';
 
 export default function App() {
