@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Typing from 'react-typing-animation';
 import FadeIn from 'react-fade-in';
 
 export default function ClassifyArticles(props) {
