@@ -98,7 +98,7 @@ export default function ClassifyArticles(props) {
           <FadeIn transition="5000"> {title} </FadeIn>{' '}
         </h2>
       </div>
-      <FadeIn transition="1000">
+      <FadeIn>
         <img
           src={`https://source.unsplash.com/300x300/?${
             props.newsTopic
